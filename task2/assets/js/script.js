@@ -65,7 +65,7 @@ function populateUI(data) {
     let { items } = data
     let item = items[0]
     country.innerHTML = item.accessInfo.country
-    bodyTextSnippet.innerHTML = item.searchInfo.textSnippet
+    bodyTextSnippet.innerHTML = typeof item.searchInfo === "undefined" || item.searchInfo === null ? "" : item.searchInfo.textSnippet
     author.innerHTML = item.volumeInfo.authors[0]
     bodyTitle.innerHTML = item.volumeInfo.title
     pages.innerHTML = item.volumeInfo.pageCount
