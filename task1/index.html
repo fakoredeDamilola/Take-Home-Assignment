@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1 - Invoice page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="invoice-popup">
+        <div class="invoice-popup-cancelBtn">X</div>
+        <div class="invoice-data"></div>
+      </div>
+      <div class="page-wrapper">
+        <div class="invoice-trapezium"></div>
+        <div class="invoice-heading">
+          <h1>OPTISOURCETECH</h1>
+        </div>
+        <div class="container">
+          <form>
+            <div class="invoice-container">
+              <div class="tab">
+                <div class="tabNumber">
+                  <span class="number">1</span>
+                </div>
+                <div>
+                  <div class="tabInfo">
+                    <span class="data">Basic information</span>
+                  </div>
+                  <div class="invoice-textbox">
+                    <label for="invoiceNumber">Invoice Number</label>
+                    <input
+                      type="number"
+                      id="invoiceNumber"
+                      placeholder="Example : 57338"
+                    />
+                  </div>
+                  <div class="invoice-textbox">
+                    <label for="invoiceDescription">Invoice Description</label>
+                    <input
+                      type="text"
+                      id="invoiceDescription"
+                      placeholder="Example : this is an invoice"
+                    />
+                  </div>
+                  <div class="invoice-textbox">
+                    <label for="invoiceAmount">Invoice Amount</label>
+                    <input
+                      type="number"
+                      id="invoiceAmount"
+                      placeholder="Example : $34.00"
+                    />
+                  </div>
+                  <div class="invoice-textbox">
+                    <label for="orderNumber">Order number</label>
+                    <input
+                      type="number"
+                      id="orderNumber"
+                      placeholder="Example : #5626"
+                    />
+                  </div>
+                  <div class="invoice-textbox">
+                    <label for="salesAgent">Sales agent</label>
+                    <input
+                      type="text"
+                      id="salesAgent"
+                      placeholder="Example : Damilola"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="tabNumber">
+                  <span class="number">2</span>
+                </div>
+                <div>
+                  <div class="tabInfo">
+                    <span class="data">Date</span>
+                  </div>
+                  <div class="invoice-textbox">
+                    <label for="invoiceDate">Invoice Date</label>
+                    <input type="date" id="invoiceDate" />
+                  </div>
+                  <div class="invoice-textbox">
+                    <label for="deliveryDate">Delivery Date</label>
+                    <input type="date" id="deliveryDate" />
+                  </div>
+                  <div class="invoice-textbox">
+                    <label for="settleDate">Settle Date</label>
+                    <input type="date" id="settleDate" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab">
+                <div class="tabNumber">
+                  <span class="number">3</span>
+                </div>
+                <div>
+                  <div class="tabInfo">
+                    <span class="data">Currency & vat</span>
+                  </div>
+                  <div class="invoice-selectbox">
+                    <label for="invoiceVat">Invoice vat</label>
+                    <select name="vat" id="invoiceVat">
+                      <option value="5%">5%</option>
+                      <option value="10%">10%</option>
+                      <option value="20%">20%</option>
+                    </select>
+                  </div>
+                  <div class="invoice-selectbox">
+                    <label for="currency">Currency</label>
+                    <select name="currency" id="currency">
+                      <option value="Naira">Naira</option>
+                      <option value="Dollars">Dollars</option>
+                      <option value="Pounds">Pounds</option>
+                      <option value="Yens">Yens</option>
+                    </select>
+                  </div>
+                  <div class="invoice-selectbox">
+                    <label for="exchangeRate">Exchange rate</label>
+                    <select name="rate" id="exchangeRate">
+                      <option value="Naira">Naira</option>
+                      <option value="Dollars">Dollars</option>
+                      <option value="Pounds">Pounds</option>
+                      <option value="Yens">Yens</option>
+                    </select>
+                  </div>
+                  <div class="invoice-selectbox">
+                    <label for="client">Client</label>
+                    <select name="client" id="client">
+                      <option value="Microsoft">Microsoft</option>
+                      <option value="Apple">Apple</option>
+                      <option value="Samsung">Samsung</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="invoice-buttons">
+              <button class="prev">prev</button>
+              <button class="next">next</button>
+            </div>
+            <div class="submit-button">
+              <input type="submit" value="submit" class="submit" />
+            </div>
+            <div class="indicators">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </form>
+          <section class="order-information">
+            <div class="order-information-container">
+              <div class="order-title">
+                <h1>Your order</h1>
+              </div>
+              <div class="order-data"></div>
+              <div class="orderFooter">
+                <h5>Thank You For Your Patronage</h5>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="invoice-trapezium-2"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

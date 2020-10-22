@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2 | GET REQUEST</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#"> OPTISOURCETECH </a>
+          </div>
+
+          <div class="menu-toggle">
+            <div class="bars-text">
+              <div class="bars"></div>
+              <div class="bars"></div>
+              <div class="bars"></div>
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="#">HOME</a>
+              <div class="animation"></div>
+            </li>
+            <li>
+              <a href="#">BOOKS</a>
+              <div class="animation"></div>
+            </li>
+            <li>
+              <a href="#">ABOUT</a>
+              <div class="animation"></div>
+            </li>
+            <li class="searchIcon">
+              <a href="#">SEARCH</a>
+              <div class="animation"></div>
+            </li>
+            <li>
+              <a href="#">CONTACT</a>
+              <div class="animation"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="search-div">
+      <div class="closebtn">X</div>
+      <div class="inputContainer">
+        <input type="number" class="inputBox" placeholder="ISBN" /><button
+          class="searchbtn"
+        >
+          search
+        </button>
+      </div>
+    </div>
+    <main class="container">
+      <div class="body">
+        <section class="bodyPicture"></section>
+        <section class="body_grid">
+          <section class="bodyHeader">
+            <h1 class="bodyTitle"></h1>
+            <h2>
+              <span class="author"></span> | <span class="country"></span>
+            </h2>
+
+            <div class="bodyInfo">
+              <div>Pages: <span class="pages"></span></div>
+              <div>Publish: <span class="publish"></span></div>
+              <div>Category: <span class="category"></span></div>
+              <div>Publisher: <span class="publisher"></span></div>
+            </div>
+            <div class="bodyTextSnippet"></div>
+            <div class="bodyCategories">Category <span></span></div>
+            <div class="bodyButton">
+              <a href="#" target="_blank" class="freeDownload"
+                ><button class="freeDownloadBtn">Free Download</button></a
+              >
+              <a href="#" class="read" target="_blank"
+                ><button class="readBtn">Read Online</button></a
+              >
+            </div>
+          </section>
+        </section>
+      </div>
+      <aside>
+        <hr />
+        <div class="aside">
+          <a
+            href="#"
+            data-isbn="3940862215"
+            data-image="./assets/images/cover2.jpeg"
+          >
+            <div></div>
+          </a>
+          <a
+            href="#"
+            data-isbn="0932664385"
+            data-image="./assets/images/cover3.jpeg"
+          >
+            <div></div>
+          </a>
+          <a
+            href="#"
+            data-isbn="0747532699"
+            data-image="./assets/images/cover4.jpeg"
+          >
+            <div></div>
+          </a>
+          <a
+            href="#"
+            data-isbn="0969074522"
+            data-image="./assets/images/cover5.jpeg"
+          >
+            <div></div>
+          </a>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <div class="newsletter">
+        <span>Sign up for Book's Newsletter:</span>
+        <button>Subscribe</button>
+      </div>
+      <div class="contact">
+        <p>©2007-2020 Brett Battles—All Rights Reserved</p>
+        <p>Author website design & build: xuni.com</p>
+        <p>Privacy Policy</p>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
